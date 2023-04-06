@@ -1,0 +1,16 @@
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: admin
+        password: admin
+
+    jpa:
+        open-in-view: true
+        show-sql: true
+        properties:
+            dialect: org.hibernate.dialect.PostgreSQLDialect
+        hibernate:
+            ddl-auto: update
+auth:
+    secret-key: 3272357538782F413F4428472D4B6150645367566B5970337336763979244226452948404D6251655468576D5A7134743777217A25432A462D4A614E64526655
+    duration-of-token: 1000000
